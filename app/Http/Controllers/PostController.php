@@ -15,6 +15,7 @@ class PostController extends Controller
     
     public function show(Post $post)
     {
-        dd($post);#dd関数は変数の中身の確認ができる
+        #dd($post);#dd関数は変数の中身の確認ができる
+        return view('posts/show')->with(['post'=>$post]);
     }
 }
