@@ -21,6 +21,7 @@
                         @csrf
                         @method('DELETE')
                         <button type="button" onclick="deletePost({{$post->id}})">delete</button>
+                        
                     </form>
                 </div>
             @endforeach
@@ -35,5 +36,6 @@
                 }
             }
         </script>
+        
     </body>
 </html>
