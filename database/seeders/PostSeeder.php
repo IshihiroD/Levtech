@@ -23,5 +23,12 @@ class PostSeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
         ]);
+        
+        DB::table('posts')->insert([
+                'title' => 'エラー文',
+                'body' => '読めるようになれば怖くない',
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime(),
+        ]);
     }
 }
